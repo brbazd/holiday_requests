@@ -10,6 +10,22 @@
 </head>
 <body>
 
+<header>
+    <ul>
+        <li><a href="{{route('request.index')}}">Home</a></li>
+        <div class="logo">logo</div>
+        <li><a href="{{route('request.create')}}">Request</a></li>
+    </ul>
+</header>
+
+
+
+
+
+
 {{$slot}}
+<footer>
+    &copy;2023
+</footer>
 </body>
 </html>
