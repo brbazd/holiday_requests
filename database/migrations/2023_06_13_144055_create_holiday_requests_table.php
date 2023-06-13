@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('holiday_requests', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('employee')->constrained('users');
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('email')->unique();
             $table->text('reason');
-            $table->enum('status',['pending','rejected','approved']);
+            $table->enum('status',['pending','rejected','approved'])->default('pending');
             $table->timestamps();
         });
     }

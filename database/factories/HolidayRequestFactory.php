@@ -17,7 +17,9 @@ class HolidayRequestFactory extends Factory
     public function definition(): array
     {
         return [
-            'employee' => fake()->numberBetween(1,50),
+            'first_name' => fake()->firstName(),
+            'last_name' => fake()->lastName(),
+            'email' => fake()->unique()->safeEmail(),
             'reason' => fake()->paragraph(2,true),
             'status' => fake()->randomElement(['pending','rejected','approved'])
         ];

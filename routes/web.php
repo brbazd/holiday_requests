@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::get('/requests', [HolidayRequestController::class, 'index'])->name('request.index');
 
 Route::get('/requests/add', [HolidayRequestController::class, 'create'])->name('request.create');
+
+Route::post('/requests/add', [HolidayRequestController::class, 'store'])->name('request.store');

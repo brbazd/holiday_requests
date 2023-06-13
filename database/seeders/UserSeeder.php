@@ -2,17 +2,16 @@
 
 namespace Database\Seeders;
 
-use App\Models\HolidayRequest;
-use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
 
-class HolidayRequestSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        HolidayRequest::factory(100)->create();
+        // User::factory(50)->create();
     }
 }
