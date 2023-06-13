@@ -10,4 +10,9 @@ class HolidayRequestController extends Controller
     {
         return view('request.index');
     }
+
+    public function create()
+    {
+        return view('request.create');
+    }
 }
