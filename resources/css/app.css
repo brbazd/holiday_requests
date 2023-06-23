@@ -31,14 +31,20 @@ ul li a {
     display: inline-block;
 }
 
-form{
-    margin: 0 auto;
+form {
     background-color: #4b5563;
     display: inline-block;
-    height: 300px;
+    position: fixed;
+    height: 350px;
     width: 300px;
+    top: 40%;
+    left: 36%;
+    border: none;
+    border-radius: 10px;
 
 }
+
+
 
 .inputs{
     margin-top:10px ;
@@ -68,5 +74,16 @@ button{
 
 table,tr,td{
     border: 1px solid black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
 }
 

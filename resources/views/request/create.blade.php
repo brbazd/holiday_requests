@@ -1,6 +1,7 @@
 <x-layout>
-    <form action="{{route('request.store')}}" method="post">
 
+    <form action="{{route('request.store')}}" method="post">
+        <h1>Log in</h1>
         @csrf
         <div class="inputs">
         <label for="first_name">FirstName</label>
